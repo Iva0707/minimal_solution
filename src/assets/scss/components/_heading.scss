@@ -4,15 +4,35 @@
 	width: 100%;
 
 	z-index: 1;
+
+	&.heading--vertical {
+		@media (min-width: 768px) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+			writing-mode: vertical-rl;
+			text-align: center;
+
+			transform: rotate(180deg);
+		}
+	}
 }
 
 .heading__subtitle {
-	max-width: 46.8rem;
-
 	display: inline-block;
+
+	max-width: 46.8rem;
 
 	&:not(:last-child) {
 		margin-bottom: clamp(1.4rem, 1.6vw, 3.2rem);
+
+		.heading--vertical & {
+			@media (min-width: 768px) {
+				margin: 0 0 0 clamp(1.4rem, 1.6vw, 3.2rem);
+			}
+		}
 	}
 
 	.heading--lite & {

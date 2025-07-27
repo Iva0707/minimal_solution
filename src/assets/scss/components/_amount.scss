@@ -1,0 +1,30 @@
+.amount {
+	&:not(.amount--light) {
+		display: grid;
+		row-gap: clamp(1rem, 0.82vw, 1.6rem);
+	}
+
+	&.amount--centered {
+		text-align: center;
+	}
+}
+
+.amount__number {
+	display: block;
+
+	color: $black;
+
+	@include h1;
+
+	.amount--light & {
+		color: $gray-2;
+	}
+}
+
+.amount__label {
+	display: block;
+
+	.amount--light & {
+		color: $gray-2;
+	}
+}
