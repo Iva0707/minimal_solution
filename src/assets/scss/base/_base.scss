@@ -107,15 +107,9 @@ body {
 
 	overflow: hidden;
 
-	// :not(.section--full &) {
-	// 	@media (max-width: 767px) {
-	// 		padding-top: 50px;
-	// 	}
-	// }
-
 	.screen-01 & {
 		@media (max-width: 767px) {
-			padding-inline: calc($padding * -1);
+			padding-inline: 0;
 		}
 	}
 }

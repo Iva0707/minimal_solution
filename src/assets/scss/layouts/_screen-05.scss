@@ -1,13 +1,12 @@
-.screen-02__wrapper {
+.screen-05__wrapper {
 	height: 100%;
 
 	@media (min-width: 768px) {
 		display: flex;
-		align-items: flex-start;
 	}
 }
 
-.screen-02__content {
+.screen-05__content {
 	@media (min-width: 768px) {
 		flex: 0 1 50%;
 		align-self: center;
@@ -22,13 +21,22 @@
 	}
 }
 
-.screen-02__image_wrapper {
+.screen-05__images {
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+
 	@media (min-width: 768px) {
 		flex: 0 1 50%;
 	}
 }
 
-.screen-02__image {
-	max-width: 100%;
+.screen-05__image_wrapper {
+	@media (max-width: 767px) {
+		margin-inline: calc($padding * -1);
+	}
+}
+
+.screen-05__image {
 	width: 100%;
+	height: 100%;
 }

@@ -36,6 +36,12 @@
 
 		left: calc($padding * -1);
 	}
+
+	@media (max-width: 767px) {
+		width: 100%;
+
+		aspect-ratio: 2/3;
+	}
 }
 
 .screen-03__image {
