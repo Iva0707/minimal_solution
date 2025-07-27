@@ -1,0 +1,40 @@
+.screen-04__heading {
+	&:not(:last-child) {
+		margin-bottom: clamp(4rem, 8vw, 15.2rem);
+	}
+}
+
+.screen-04__content {
+	display: grid;
+
+	@media (min-width: 768px) {
+		grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+		gap: 4.8rem;
+	}
+
+	@media (max-width: 767px) {
+		grid-template-columns: 1fr;
+		gap: 4rem;
+	}
+}
+
+.screen-04-acticle__image {
+	width: 4.8rem;
+
+	aspect-ratio: 1;
+	object-fit: contain;
+
+	&:not(:last-child) {
+		margin-bottom: clamp(1rem, 1.3vw, 2.6rem);
+	}
+}
+
+.screen-04-acticle__title {
+	color: $black;
+
+	@include h2;
+
+	&:not(:last-child) {
+		margin-bottom: clamp(1rem, 1.68vw, 3.2rem);
+	}
+}

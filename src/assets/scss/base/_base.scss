@@ -49,6 +49,12 @@ body {
 		padding-block: 2rem;
 	}
 
+	&:not(.section--full) {
+		@media (max-width: 767px) {
+			padding-block: 5rem;
+		}
+	}
+
 	&.section--centered {
 		@media (min-width: 768px) {
 			align-items: center;
@@ -79,14 +85,14 @@ body {
 			top: 50%;
 			right: calc($padding / 2);
 
-			transform: translate(50%, -50%);
+			transform: translate(0, -50%);
 		}
 
 		@media (max-width: 767px) {
-			top: 1rem;
+			top: 2.5rem;
 			left: 50%;
 
-			transform: translate(-50%, 50%);
+			transform: translate(-50%, -50%);
 		}
 	}
 }
@@ -100,6 +106,12 @@ body {
 	background-color: hotpink;
 
 	overflow: hidden;
+
+	// :not(.section--full &) {
+	// 	@media (max-width: 767px) {
+	// 		padding-top: 50px;
+	// 	}
+	// }
 
 	.screen-01 & {
 		@media (max-width: 767px) {

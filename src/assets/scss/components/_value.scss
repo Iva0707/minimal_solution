@@ -2,6 +2,7 @@
 	display: grid;
 	grid-template-columns: repeat(2, auto);
 	justify-content: space-between;
+	gap: 1rem;
 
 	&:not(:last-child) {
 		margin-bottom: clamp(2rem, 3.9vw, 7.6rem);
