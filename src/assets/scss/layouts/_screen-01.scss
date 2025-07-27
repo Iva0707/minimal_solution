@@ -1,0 +1,40 @@
+.screen-01__wrapper {
+	position: relative;
+
+	padding: clamp(2rem, 14vh, 15.6rem) clamp(2rem, 12.5vw, 24rem);
+
+	display: flex;
+	align-items: center;
+
+	@media (min-width: 768px) {
+		min-height: 55vh;
+	}
+
+	@media (max-width: 767px) {
+		height: 100%;
+	}
+
+	&::after {
+		position: absolute;
+		left: 0;
+		top: 0;
+
+		width: 100%;
+		height: 100%;
+
+		background-color: rgba($black, 0.6);
+
+		content: "";
+	}
+}
+
+.screen-01__image {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	object-fit: cover;
+}

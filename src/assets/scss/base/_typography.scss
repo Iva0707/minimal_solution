@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+b,
+strong {
+	font-weight: 700;
+}
+
+@mixin h1 {
+	font-size: clamp(3rem, 3.1vw, 6rem);
+	font-weight: 700;
+	line-height: 1.25;
+}
+
+@mixin h2 {
+	font-size: clamp(2.4rem, 1.5vw, 3rem);
+	font-weight: 700;
+}
+
+// @mixin h3 {
+// }
+// @mixin h4 {
+// }
+// @mixin h5 {
+// }
+// @mixin h6 {
+// }
+// @mixin text {
+// }
+
+// h1,
+// .h1 {
+// @include h1;
+// }
+
+// h2,
+// .h2 {
+// @include h2;
+// }
+
+// h3,
+// .h3 {
+// @include h3;
+// }
+
+// h4,
+// .h4 {
+// @include h4;
+// }
+
+// h5,
+// .h5 {
+// @include h5;
+// }
+
+// h6,
+// .h6 {
+// @include h6;
+// }

@@ -1,0 +1,54 @@
+.bullets {
+	position: fixed;
+
+	display: flex;
+	gap: 1.2rem;
+
+	z-index: 50;
+
+	@media (min-width: 768px) {
+		top: 50%;
+		left: calc($padding / 2);
+
+		flex-direction: column;
+
+		transform: translate(50%, -50%);
+	}
+
+	@media (max-width: 767px) {
+		bottom: 2rem;
+		left: 50%;
+
+		flex-wrap: wrap;
+		justify-content: center;
+
+		width: 100%;
+		padding-inline: $padding;
+
+		transform: translate(-50%, 0);
+	}
+}
+
+.bullet {
+	background-color: $gray;
+
+	outline: 1px solid rgba($white, 0.2);
+
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.1s;
+
+	@media (min-width: 768px) {
+		width: 0.5rem;
+		height: 5rem;
+	}
+
+	@media (max-width: 767px) {
+		width: 4rem;
+		height: 0.5rem;
+	}
+
+	&.bullet--active {
+		background-color: $black;
+	}
+}

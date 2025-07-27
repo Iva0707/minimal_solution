@@ -1,0 +1,42 @@
+.value__item {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	justify-content: space-between;
+
+	&:not(:last-child) {
+		margin-bottom: clamp(2rem, 3.9vw, 7.6rem);
+	}
+}
+
+.value__number {
+	font-weight: 700;
+	color: $black;
+}
+
+.value__line {
+	position: relative;
+
+	grid-column: span 2;
+
+	height: 1rem;
+
+	background-color: rgba($black, 0.1);
+}
+
+.value__cover {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	height: 100%;
+
+	background-color: $black;
+
+	.value__item--1 & {
+		width: 95%;
+	}
+
+	.value__item--2 & {
+		width: 60%;
+	}
+}

@@ -1,0 +1,51 @@
+.heading {
+	position: relative;
+
+	width: 100%;
+
+	z-index: 1;
+}
+
+.heading__subtitle {
+	max-width: 46.8rem;
+
+	display: inline-block;
+
+	&:not(:last-child) {
+		margin-bottom: clamp(1.4rem, 1.6vw, 3.2rem);
+	}
+
+	.heading--lite & {
+		color: $gray-2;
+	}
+
+	.heading--big & {
+		max-width: 90rem;
+	}
+}
+
+.heading__title {
+	max-width: 46.8rem;
+
+	color: $black;
+
+	@include h1;
+
+	&:not(:last-child) {
+		margin-bottom: clamp(2rem, 6.9vw, 13.2rem);
+	}
+
+	.heading--lite & {
+		color: $white;
+	}
+
+	.heading--big & {
+		max-width: 90rem;
+	}
+}
+
+.heading__text {
+	@media (min-width: 768px) {
+		max-width: 54rem;
+	}
+}
