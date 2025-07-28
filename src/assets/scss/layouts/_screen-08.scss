@@ -12,7 +12,7 @@
 	@media (min-width: 768px) {
 		flex: 0 1 50%;
 
-		padding-left: clamp(2rem, 8vw, 24rem);
+		padding-left: $padding;
 	}
 
 	&:not(:last-child) {
@@ -24,7 +24,7 @@
 
 .screen-08__heading {
 	&:not(:last-child) {
-		margin-bottom: clamp(2rem, 6.25vw, 12rem);
+		margin-bottom: clamp(2rem, 10vw, 19rem);
 	}
 }
 

@@ -153,12 +153,12 @@ a:not(.button) {
 	}
 }
 
-// ::selection {
-// 	background: $blue_1; // was
-// 	color: $blue; // was
-// }
+::selection {
+	background: $black;
+	color: $gray-2;
+}
 
-// ::-moz-selection {
-// 	background: $blue_1; // was
-// 	color: $blue; // was
-// }
+::-moz-selection {
+	background: $black;
+	color: $gray-2;
+}

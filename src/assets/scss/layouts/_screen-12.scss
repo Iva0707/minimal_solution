@@ -1,10 +1,10 @@
-.screen-01__wrapper {
+.screen-12__wrapper {
 	position: relative;
-
-	padding: clamp(2rem, 14vh, 15.6rem) $padding;
 
 	display: flex;
 	align-items: center;
+
+	padding: clamp(2rem, 14vh, 15.6rem) $padding;
 
 	@media (min-width: 768px) {
 		min-height: 55vh;
@@ -28,7 +28,26 @@
 	}
 }
 
-.screen-01__image {
+.screen-12__articles {
+	position: relative;
+
+	display: flex;
+	gap: 4rem;
+
+	width: 100%;
+
+	z-index: 1;
+
+	@media (min-width: 768px) {
+		justify-content: space-between;
+	}
+
+	@media (max-width: 767px) {
+		flex-direction: column;
+	}
+}
+
+.screen-12__image {
 	position: absolute;
 	top: 0;
 	left: 0;
